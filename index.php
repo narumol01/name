@@ -39,19 +39,5 @@ while($Result = mysqli_fetch_array($res))
     <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
     <input type="submit" id="commentBtn">
 </form> 
-$name = $_POST['name'];
-$comment = $_POST['comment'];
-$link = $_POST['link'];
-
-
-$sql = "INSERT INTO guestbook (Name , Comment , Link) VALUES ('$name', '$comment', '$link')";
-
-
-if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
-  } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-  }
-  
 mysqli_close($conn);
 ?>
