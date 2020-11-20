@@ -23,7 +23,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    echo "<td><a href='userupdateform.php?member_id=$row[0]'>edit</a></td> ";
+    echo "<td><a href='form.html'>edit</a></td> ";
     echo "<td><a href='UserDelete.php?member_id=$row[0]' onclick=\"return confirm('Do you want to delete this record? !!!')\">del</a></td> ";
   </tr>
 <?php
