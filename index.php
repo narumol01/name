@@ -6,12 +6,6 @@ if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-
-<html>
-<head>
-<title>ITF</title>
-</head>
-<body>
 <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'home-work.mysql.database.azure.com', 'qwertyuiop@home-work', 'Asdfghjkl11', 'itf13', 3306);
@@ -42,10 +36,6 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-<?php
-mysqli_close($conn);
-?>
-</body>
 
 $name = $_POST['name'];
 $comment = $_POST['comment'];
