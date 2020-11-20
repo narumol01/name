@@ -6,13 +6,6 @@ if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-<?php
-$conn = mysqli_init();
-mysqli_real_connect($conn, 'home-work.mysql.database.azure.com', 'qwertyuiop@home-work', 'Asdfghjkl11', 'itf13', 3306);
-if (mysqli_connect_errno($conn))
-{
-    die('Failed to connect to MySQL: '.mysqli_connect_error());
-}
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
 <table width="600" border="1">
