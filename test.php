@@ -1,3 +1,3 @@
 <?php
-echo "<h>PHP</h>";
+echo "<h2>PHP</h2>";
 ?>
