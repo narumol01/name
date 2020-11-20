@@ -29,7 +29,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-
+<?php
 $name = $_POST['name'];
 $comment = $_POST['comment'];
 $link = $_POST['link'];
